@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+         <form action="/update_user/{{user_id}}" method="POST">
+         <div class="form-group">
+            <label for="name">Name:</label>
+           <input type="text" name="user_name" id="name" class="form-control" value="{{user_name}}">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" name="user_address" class="form-control" id="address" value="{{user_address}}">        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="number" name="user_mobile"  class="form-control" id="" value="{{user_mobile}}">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" name="user_age" class="form-control" id="" value="{{user_age}}" >
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+             <input type="text" name="user_gender" class="form-control" id="" value="{{user_gender}}">
+        </div>
+        <button type="submit" class="btn btn-outline-success">Update</button>
+        </form>
+    </div>
+</body>
+</html>
+
+{{!-- <label for="salary">Salary</label>
+<input type="number" name="user_salary" id="" value="{{user_salary}}"><br> --}}
